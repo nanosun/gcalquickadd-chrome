@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Quick Add Event</title>
+    <style>
+      textarea {
+        min-width: 180px;
+      }
+      body {
+        min-width: 190x;
+      }
+	  td, th {text-align:left; padding:2px;}
+    </style>
+	<script src="oauth2/oauth2.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+	<div id="form">
+	<textarea id="eventinput" autofocus rows="3" placeholder="Input an event in your own way"></textarea><br>
+	<button id="submitButt"> Add Event </button>
+	<button id="openGC"> Open Calendar </button>
+	</div>
+	<div id="result" hidden>
+	  <table border="0" style="min-width:190px">
+		<tr>
+		  <th colspan="2" style="font-size:20px; height:30px; vertical-align:bottom" ><a id="elink" href="">Event Name</a></th>
+		</tr>
+		<tr>
+		  <th width=20%>Date</th>
+		  <td width=70% id="edate"></td>
+		</tr>
+		<tr>
+		  <th>Time</th>
+		  <td id="etime"></td>
+		</tr>
+		<tr>
+		  <th>Location</th>
+		  <td id="eloc"></td>
+	  </table><br>
+	  <button id="refreshButt"> Add Another </button>
+	</div>
+  </body>
+</html>
+
