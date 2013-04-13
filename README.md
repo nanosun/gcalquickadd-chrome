@@ -1,4 +1,7 @@
-# This is a chrome extension which lets you quick add an event to Google Calendar.
+# GCal Quick Add
+[Chrome Web Store](https://chrome.google.com/webstore/detail/gcal-quick-add/gaohilkdmplncgfgmbnndhnpiabgonkh)
+
+### This is a chrome extension which lets you quick add an event to Google Calendar.
 
 This simple extension communicates with Google Calendar API's quick add function. Just type in an event in a natural way like "Meet my boss at 5 pm in her office". This extension would then help you create a event and display the event information as well as the url to the event in the GCalendar.
 
