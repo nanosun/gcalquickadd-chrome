@@ -5,6 +5,7 @@ OAuth2.adapter('google', {
       'redirect_uri={{REDIRECT_URI}}&' +
       'scope={{API_SCOPE}}&' +
       'access_type=offline&' +
+      'approval_prompt=force&' +
       'response_type=code')
         .replace('{{CLIENT_ID}}', config.clientId)
         .replace('{{REDIRECT_URI}}', this.redirectURL(config))
@@ -37,6 +38,7 @@ OAuth2.adapter('google', {
       client_id: config.clientId,
       client_secret: config.clientSecret,
       redirect_uri: this.redirectURL(config),
+      //approval_prompt: 'auto',
       grant_type: 'authorization_code'
     };
   },

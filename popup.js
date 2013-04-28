@@ -8,7 +8,6 @@ var googleAuth = new OAuth2('google', {
   api_scope: 'https://www.googleapis.com/auth/calendar'
 });
 
-var newevent;
 var createEvent={
     apiRequest:function (){ 
 	var texts="text=" + encodeURIComponent(document.getElementById("eventinput").value).replace('%20','+');
